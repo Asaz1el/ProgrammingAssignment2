@@ -1,6 +1,5 @@
-## This function creates a list to 1) set the value of the matrix,
-## 2) get the value of the matrix, 3) set the value of the inverse, and
-## 4) get the value of the inverse.
+## This function creates a list to 1) set the value of the matrix, 2) get the value of the matrix,
+## 3) set the value of the inverse, and 4) get the value of the inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
@@ -15,9 +14,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 ## This function relies on the previous function to check if the inverse of a matrix has already been
-## calculated. If so, it retrieves in from cache and skips the
-## computation. Else, it calculates it.
-
+## calculated. If so, it retrieves in from cache and skips the computation. Else, it calculates it.
 
 cacheSolve <- function(x, ...) {
   m <- x$getsolve()
